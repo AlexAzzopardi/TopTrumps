@@ -1,6 +1,10 @@
 package org.example;
 
 import org.example.objects.Card;
+import org.example.objects.Deck;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,5 +19,19 @@ public class Main {
         Card india = new Card("India", 105, 40, 45, 60, 65);
         Card brazil = new Card("Brazil", 85, 45, 35, 95, 100);
         Card turkey = new Card("Turkey", 70, 30, 75, 35, 75);
+
+        List<Card> cardArray = new ArrayList<>();
+        cardArray.add(usa);
+        cardArray.add(france);
+        cardArray.add(germany);
+        cardArray.add(britain);
+        cardArray.add(russia);
+        cardArray.add(china);
+        cardArray.add(japan);
+        cardArray.add(india);
+        cardArray.add(brazil);
+        cardArray.add(turkey);
+        Deck deck1 = new Deck(cardArray);
+
     }
 }
